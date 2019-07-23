@@ -57,4 +57,17 @@
     color: #fff;
 }
 
+.intro {
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
