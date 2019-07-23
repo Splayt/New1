@@ -1,0 +1,56 @@
+/*@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Bold.ttf) format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+*/
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.page__image {
+    background-image: url(../image/intro.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__link {
+    display: block;
+    width: 210px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #1c5bc4;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+
+}
+
+.intro__link-text {
+
+    font-size: 12px;
+
+    letter-spacing: .20em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1c5bc4;
+}
+
+.intro__link:hover {
+    background-color: #1c5bc4; 
+}
+
+
