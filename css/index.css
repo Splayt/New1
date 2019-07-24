@@ -25,16 +25,14 @@
 
 .intro__link {
     display: block;
-    width: 210px;
-    height: 45px;
+    /*width: 210px;
+    height: 45px;*/
     border-radius: 4px;
     background-color: transparent;
     border: 1px solid #1c5bc4;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+    
+    
 
 
 }
@@ -42,11 +40,13 @@
 .intro__link-text {
 
     font-size: 12px;
-
+    margin: ;
     letter-spacing: .20em;
     text-transform: uppercase;
     font-weight: bold;
     color: #1c5bc4;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .intro__link:hover {
