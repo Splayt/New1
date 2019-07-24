@@ -1,0 +1,393 @@
+.page {
+    position: relative;
+    min-height: 100%;
+}
+
+.main {
+    padding-bottom: 90px;
+}
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-color: #4b73b5;
+    padding: 9px 0 13px 0;
+    
+}
+
+.container-2 {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+.container-3 {
+    width: 900px;
+    margin: 0 auto 60px auto;
+}
+
+.header__container {
+    display: flex;
+    position: relative;
+    height: 55px;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.header__col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header__col--align-right {
+    justify-content: flex-end;
+}
+
+.contacts__phone {
+
+    font-size: 21px;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+}
+
+.contacts__forshure {
+    font-size: 14px;
+    color: #fff;
+    
+}
+
+.contacts__forshure-button {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    border: 0;
+    opacity: .7;
+    color: inherit;
+    font-size: 14px;
+    background: none;
+    text-decoration: underline;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+
+.contacts__forshure-button:hover {
+    opacity: 1;
+}
+
+.contacts__forshure-panel {
+    display: none;
+    position: absolute;
+
+    z-index: 1;
+    padding: 15px 20px;
+    border-radius: 3px;
+
+}
+
+.content {
+    display: flex;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navigation {
+    flex-grow: 2;
+    width: 200px;
+    margin: 10px;
+    min-width: 160px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.main {
+    flex-grow: 3;
+    width: 900px;
+    
+    
+    
+}
+
+
+
+.navigation__list {
+
+    margin-top: 28px;
+    margin-left: 15px;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    width: 182px;
+
+
+}
+
+.navigation__item {
+
+    margin-bottom: 20px;
+
+}
+
+.navigation__link {
+    color: #4b73b5;
+    font-weight: bold;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    padding: 2px 0 2px 37px;
+    width: 110px;
+    height: 20px;
+    line-height: 16px;
+    position: relative;
+    transition: .3s;
+}
+
+.breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-style: italic;
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+.breadcrumbs__item:not(:last-child)::after{
+    content: " / ";
+    margin-right: 2px;
+}
+.breadcrumnbs__link:hover {
+    color: #4b73b5;
+}
+
+.feedback {
+    margin-bottom: 45px;
+}
+
+.reviews {
+    margin: -15px 0 13px;
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+.reviews__list {
+    
+    align-content: center;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    display: flex;
+    align-items: flex-start;
+    padding: 25px 0;
+
+
+}
+
+.reviews__image {
+    width: 184px;
+}
+
+.reviews__content {
+    width: 735px;
+
+}
+
+.reviews__data {
+    font-size: 14px;
+    color: #656464;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.reviews__headline {
+    font-weight: bold;
+    font-size: 18px;
+    color: #221f1f;
+}
+
+.reviews__text {
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pagination__paragraph {
+    margin-right: 10px;
+    color: #7a7979;
+
+}
+
+.pagination__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.pagination__list:first-child {
+    margin-right: 5px;
+}
+
+.pagination__link {
+    display: inline-block;
+    min-width: 25px;
+    min-height: 25px;
+    padding: 0 5px;
+    color: #221f1f;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pagination__link--active {
+    background-color: #4b73b5;
+    color: #fff;
+}
+
+.pagination__link:not(.pagination__link--active):hover {
+    background-color: #4b73b5;
+    color: #fff;
+}
+
+.booking {
+    margin-bottom: 58px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../image/Rectangle\ 1.png);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    
+}
+
+.booking a {
+    color: inherit;
+}
+
+.booking .container {
+    max-width: 630px;
+}
+
+.form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    padding: 45px 70px;
+    background-color: #f5f5f5;
+}
+
+.form__row {
+    display: flex;
+    align-items: center;
+}
+
+.form__column {
+    flex-grow: 1;
+}
+
+.form__column--right {
+    text-align: right;
+}
+
+.form__group {
+    margin-bottom: 15px;
+}
+
+textarea.form__control {
+    resize: none;
+    min-height: 90px;
+}
+
+.form__label .form__legend {
+    font-size: 14px;
+}
+.form__control {
+    display: block;
+    width: 90%;
+    border: 1px solid transparent;
+    
+    background: #fff;
+    padding: 10px;
+}
+
+.form__fieldset {
+    margin: 0;
+    padding: 5px;
+    border: 0;
+}
+
+.form__submit {
+    padding: 10px  20px;
+    border-radius: 3px;
+    border: 0;
+    color: #fff;
+    background-color: #4b73b5;
+    background-size: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align:center;
+}
+
+.form__submit:hover {
+    background-color: #fff;
+    color: #4b73b5; 
+}
+
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background: #4b73b5;
+
+}
+
+.footer__container {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.footer > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__copyright {
+
+    height: 52px;
+    color: white;
+
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    line-height: 1.286;
+    width: 250px;
+    text-align: center;
+    margin-top: 14px;
+
+
+}
+
+
+.footer__logo {
+    text-align: center;
+    margin: 20px auto;
+}

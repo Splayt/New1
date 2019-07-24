@@ -58,7 +58,7 @@
 }
 
 .intro {
-    animation: bounce 1s;
+    animation: bounce 3s;
 }
 
 @keyframes bounce {
