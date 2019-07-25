@@ -151,9 +151,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     background-repeat: no-repeat;
-    background-position: left center;
-    transition: color .3s, background .3s;
-
+    background-position: left center;   
 }
 
 .navigation__link--main {
