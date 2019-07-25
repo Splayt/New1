@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font: 18px/1.66 "Roboto", sans-serif;;
     margin: 0;
 }
 
@@ -16,13 +16,6 @@ body {
     background-color: #4b73b5;
     padding: 9px 0 13px 0;
     
-}
-
-
-
-.container-3 {
-    width: 900px;
-    margin: 0 auto 60px auto;
 }
 
 .header__container {
@@ -51,6 +44,7 @@ body {
     font-size: 21px;
     font-style: normal;
     color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .contacts__forshure {
@@ -93,6 +87,12 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.main {
+    flex-grow: 3;
+    width: 900px; 
+}
+
 .navigation {
     flex-grow: 2;
     width: 200px;
@@ -101,15 +101,12 @@ body {
     margin-right: 20px;
     flex-shrink: 0;
 }
-.main {
-    flex-grow: 3;
-    width: 900px;
-    
-    
-    
+
+.main__image {
+    margin-top: 13px;
+    min-height: 299px;
+    box-sizing: border-box;
 }
-
-
 
 .navigation__list {
 
@@ -126,24 +123,46 @@ body {
 .navigation__item {
 
     margin-bottom: 20px;
-
+    vertical-align: center;
 }
 
 .navigation__link {
+    display: inline-block;
+    padding: 1px 0 0 35px;
     color: #4b73b5;
-    font-weight: bold;
-    display: block;
     font-size: 12px;
     font-weight: bold;
-    text-transform: uppercase;
+    letter-spacing: 1.7px;
     text-decoration: none;
-    margin: 0;
-    padding: 2px 0 2px 37px;
-    width: 110px;
-    height: 20px;
-    line-height: 16px;
-    position: relative;
-    transition: .3s;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: left center;   
+}
+
+.navigation__link--main {
+    background-image: url(../icon/plain_blue.png);
+    
+}
+
+.navigation__link--reviews {
+    background-image: url(../icon/feed_icon.png);
+    color: #221f1f;
+}
+
+.navigation__link--crew {
+    background-image: url(../icon/team.png);
+}
+
+
+
+.navigation__link--crew:hover {
+    background-image: url(../icon/team_icon.png);
+    color: black;
+}
+
+.navigation__link--main:hover {
+    background-image: url(../icon/main_icon.png);
+    color: black;
 }
 
 .breadcrumbs {
@@ -169,49 +188,46 @@ body {
 }
 
 .reviews {
-    margin: -15px 0 13px;
+    margin: 0 0 13px;
     padding-top: 10px;
     list-style-type: none;
+    padding: 0;
 }
 
 .reviews__list {
-    
-    align-content: center;
-    border-bottom: 1px solid rgb(245, 245, 245);
     display: flex;
-    align-items: flex-start;
     padding: 25px 0;
-
-
 }
 
 .reviews__image {
-    width: 184px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+    border-radius: 80px;
+    overflow: hidden;
 }
 
-.reviews__content {
-    width: 735px;
-
+.reviews__image--nologo {
+ background-image: url(../image/smartobject.png);
 }
-
 .reviews__data {
     font-size: 14px;
-    color: #656464;
-    text-align: left;
-    font-weight: lighter;
 }
-
 .reviews__headline {
-    font-weight: bold;
-    font-size: 18px;
-    color: #221f1f;
+    margin: 0;
 }
 
 .reviews__text {
-    font-size: 18px;
-    font-weight: lighter;
-    line-height: 1.5;
+    margin: 0;
 }
+
+.reviews__list:not(:last-child) {
+    border-bottom: 1px solid #f5f5f5;
+}
+
 
 .pagination {
     display: flex;
@@ -221,15 +237,16 @@ body {
 }
 
 .pagination__paragraph {
-    margin-right: 10px;
     color: #7a7979;
-
+    font-size: 14px;
 }
 
 .pagination__list {
     display: flex;
     align-items: center;
     list-style-type: none;
+    font-size: 14px;
+    padding-left: 0;
 }
 
 .pagination__list:first-child {
@@ -254,10 +271,12 @@ body {
 }
 
 .pagination__link:not(.pagination__link--active):hover {
-    background-color: #4b73b5;
-    color: #fff;
+    color: #1c5bc4;
 }
 
+.pagination__link--disabled {
+    opacity: .3;
+}
 .booking {
     margin-bottom: 58px;
     display: flex;
@@ -361,11 +380,12 @@ textarea.form__control {
 
 }
 
-.footer > .container {
+.footer>.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .footer__copyright {
 
     height: 52px;
@@ -385,4 +405,57 @@ textarea.form__control {
 .footer__logo {
     text-align: center;
     margin: 20px auto;
+}
+
+
+.social {
+    margin: 0 0 0 20px;
+}
+
+
+.social__headline {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    margin: 0 0 5px;
+}
+
+.social__list {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.social__item {
+    margin-right: 10px;
+}
+
+.social__link {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 10px;
+    background-color: #d2def3;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.social__link:hover {
+    background-color: #fff;
+}
+
+.social-vk {
+    background-image: url(../icon/vk.png);
+}
+
+.social-fb {
+    background-image: url(../icon/fb.png);
+}
+
+.social-google {
+    background-image: url(../icon/google.png);
+}
+
+.social-twitter {
+    background-image: url(../icon/twitter.png);
 }

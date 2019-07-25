@@ -346,27 +346,13 @@ body {
     color: #fff;
 }
 
+.pagination__link--disabled {
+    opacity: .3;
+}
+
 .pagination__link:not(.pagination__link--active):hover {
     color: #4b73b5;
 }
-
-/*.pagination__item {
-    display: inline-block;
-}
-
-.pagination__item a {
-    font-weight: bold;
-    font-size: 14px;
-    min-width: 25px;
-    min-height: 25px;
-    
-    text-decoration: none;
-    padding: 5px 8px;
-    color: #221f1f;
-}*/
-
-
-
 
 .footer {
     padding-top: 10px;

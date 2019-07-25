@@ -5,6 +5,8 @@
     <title>Отзывы</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/comments.css">
 
@@ -41,13 +43,13 @@
             <aside class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a href="main.html" class="navigation__link">Главная</a>
+                        <a href="main.html" class="navigation__link navigation__link--main">Главная</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Отзывы</a>
+                        <p href="#" class="navigation__link navigation__link--reviews">Отзывы</p>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Экипаж</a>
+                        <a href="#" class="navigation__link navigation__link--crew">Экипаж</a>
                     </li>
                 </ul>
             </aside>
@@ -64,90 +66,79 @@
 
                 <section class="feedback">
                     <h2 class="section-title">Отзывы</h2>
-                    <div class="reviews">
-                        <div class="reviews__list">
+                    <ul class="reviews">
+                        <li class="reviews__list">
                             <div class="reviews__image">
                                 <img src="/image/girl.png" alt="Молодая девушка">
                             </div>
                             <div class="reviews__content">
-                                <div class="reviews__data">
+                                <time class="reviews__data">
                                     12.10.2016
-                                </div>
-                                <div class="reviews__text">
-                                    <h4 class="reviews__headline">Ирина Паламарчук</h4>
-                                    <p class="reviews__text">
-                                        Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава
-                                        Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было.
-                                        Рекомендую эту компанию, но лучше доплатить и лететь с комфортом.
-                                    </p>
-                                </div>
+                                </time>
+                                <h4 class="reviews__headline">Ирина Паламарчук</h4>
+                                <p class="reviews__text">
+                                    Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава
+                                    Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было.
+                                    Рекомендую эту компанию, но лучше доплатить и лететь с комфортом.
+                                </p>
 
                             </div>
-                        </div>
-                        <div class="reviews__list">
+                        </li>
+                        <li class="reviews__list">
                             <div class="reviews__image">
                                 <img src="/image/man.png" alt="Мужчина">
                             </div>
                             <div class="reviews__content">
-                                <div class="reviews__data">
-                                    01.02.2016
-                                </div>
-                                <div class="reviews__text">
-                                    <h4 class="reviews__headline">Александр Бельков</h4>
-                                    <p class="reviews__text">
-                                        Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2
-                                        раза, а еду – 1 раз. Единственное, что не понравилось, как то мало места для
-                                        ног, но с этим у меня часто проблема, рост 2,1м.
-                                    </p>
-                                </div>
+                                <time class="reviews__data">
+                                    12.10.2016
+                                </time>
+                                <h4 class="reviews__headline">Ирина Паламарчук</h4>
+                                <p class="reviews__text">
+                                    Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава
+                                    Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было.
+                                    Рекомендую эту компанию, но лучше доплатить и лететь с комфортом.
+                                </p>
 
                             </div>
-                        </div>
-                        <div class="reviews__list">
-                            <div class="reviews__image">
-                                <img src="/image/smartobject.png" alt="Нет аватарки">
+                        <li class="reviews__list">
+                            <div class="reviews__image reviews__image--nologo">
+                                
                             </div>
                             <div class="reviews__content">
-                                <div class="reviews__data">
-                                    22.12.2015
-                                </div>
-                                <div class="reviews__text">
-                                    <h4 class="reviews__headline">Игорь Николаенко</h4>
-                                    <p class="reviews__text">
-                                        Кормили супер вообще! Сказали, что это из-за того, что полет менее 2,5 часов. Но
-                                        прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень
-                                        проголодались. Просто имейте это ввиду, берите с собой хотя бы бутерброды, чипсы
-                                        какие-то или печенье.
-                                    </p>
-                                </div>
+                                <time class="reviews__data">
+                                    12.10.2016
+                                </time>
+                                <h4 class="reviews__headline">Ирина Паламарчук</h4>
+                                <p class="reviews__text">
+                                    Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава
+                                    Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было.
+                                    Рекомендую эту компанию, но лучше доплатить и лететь с комфортом.
+                                </p>
 
                             </div>
-                        </div>
-                        <div class="reviews__list">
+                        <li class="reviews__list">
                             <div class="reviews__image">
                                 <img src="/image/ba.png" alt="Пожилая женщина">
                             </div>
                             <div class="reviews__content">
-                                <div class="reviews__data">
-                                    14.08.2015
-                                </div>
-                                <div class="reviews__text">
-                                    <h4 class="reviews__headline">Анастасия Порядная</h4>
-                                    <p class="reviews__text">
-                                        За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше за
-                                        аналогичные рейсы. Мне понравилось, что на борту было чисто, я аллергик и всегда
-                                        чутко реагирую на пыль. Спасибо за полет! Рекомендую!
-                                    </p>
-                                </div>
+                                <time class="reviews__data">
+                                    12.10.2016
+                                </time>
+                                <h4 class="reviews__headline">Ирина Паламарчук</h4>
+                                <p class="reviews__text">
+                                    Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава
+                                    Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было.
+                                    Рекомендую эту компанию, но лучше доплатить и лететь с комфортом.
+                                </p>
 
                             </div>
-                        </div>
-                    </div>
+
+                    </ul>
                     <div class="pagination">
                         <p class="pagination__paragraph">Страница 1 из 7</p>
                         <ul class="pagination__list">
                             <li class="pagination__item">
-                                <a class="pagination__link" href="">&lt;</a>
+                                <a class="pagination__link pagination__link--disabled">&lt;</a>
                             </li>
                             <li class="pagination__item">
                                 <a class="pagination__link  pagination__link--active" href="">1</a>
@@ -193,7 +184,7 @@
                 <div class="form__row form__group">
                     <div class="form__column">
                         <label class="form__label" for="name">Ваше имя</label>
-                        <input id="name" type="text" name="name" placeholder="Егор Дермановский" class="form__control">
+                        <input id="name" type="text" name="name" placeholder="Егорка" class="form__control">
                     </div>
                     <div class="form__column">
                         <label class="form__label" for="vk">Ссылка на профиль VK</label>
@@ -224,7 +215,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__text">
-                    <p class="footer__copyright">Сдеано с любовью и старанием на курсе "HTML + CSS" в <a
+                    <p class="footer__copyright">Сделано с любовью и старанием на курсе "HTML + CSS" в <a
                             href="#">Loftschool.</a></p>
                 </div>
                 <div class="footer__logo">
@@ -232,26 +223,25 @@
                 </div>
                 <div class="footer__social">
                     <div class="social">
-                        <div class="social__headline">Наши социальные сети</div>
-                        <!--Не получилось с помощью списка-->
-                        <div class="footer__list">
-                            <a href="#" class="social-vk socials"></a>
-                        </div>
-                        <div class="footer__list">
-                            <a href="#" class="social-fb socials"></a>
-                        </div>
-                        <div class="footer__list">
-                            <a href="#" class="social-google socials"></a>
-                        </div>
-                        <div class="footer__list">
-                            <a href="#" class="social-twitter socials "></a>
-                        </div>
-
+                        <h4 class="social__headline">Наши социальные сети</h4>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="#" class="social-vk social__link"></a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social-fb social__link"></a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social-google social__link"></a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social-twitter social__link"></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </footer>
-
 
     </div>
 </body>
