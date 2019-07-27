@@ -60,7 +60,7 @@ body {
 .contacts__forshure {
     font-size: 14px;
     color: #fff;
-
+    text-align: right;
 }
 
 .contacts__forshure-button {
@@ -75,8 +75,18 @@ body {
     text-decoration: underline;
     transition: opacity .3s;
     cursor: pointer;
+    
 }
 
+.contacts__forshure-text {
+    font-style: normal;
+    margin: 0;
+}
+.contacts__forshure-boldtext {
+    color: #4b73b5;
+    font-weight: bold;
+    
+}
 .contacts__forshure-button:hover {
     opacity: 1;
 }
@@ -84,13 +94,29 @@ body {
 .contacts__forshure-panel {
     display: none;
     position: absolute;
-
+    top: calc(100% + 5px);
     z-index: 1;
     padding: 15px 20px;
     border-radius: 3px;
-
+    color: #221f1f;
+    font-size: 14px;  
+    text-align: left;
+    background: #fff;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .2);
 }
 
+.contacts__forshure-panel::before {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: -20px;
+    border: 12px solid transparent;
+    border-bottom: 12px solid #fff;
+}
+
+.contacts__forshure-button:hover + .contacts__forshure-panel {
+    display: block;
+} 
 
 
 .content {
